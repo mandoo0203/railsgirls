@@ -8,7 +8,7 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use Puma as the app server
 
 gem 'gravtastic'
-
+#아바타
 group :development do
   gem 'sqlite3'
 end
