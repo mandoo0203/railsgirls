@@ -6,6 +6,9 @@ gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 # Use Puma as the app server
+
+gem 'gravtastic'
+
 group :development do
   gem 'sqlite3'
 end
@@ -14,9 +17,12 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+gem 'devise'
 
 gem 'carrierwave'
 # 사진업로드
+gem 'mini_magick', '3.8.0'
+# Create thumbnails with Carrierwave
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -57,3 +63,4 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+ruby "2.3.1"
